@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF43E904269F6E210043AA6D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF43E903269F6E210043AA6D /* HealthKit.framework */; };
+		AF43E907269F6E6E0043AA6D /* SetupScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43E906269F6E6E0043AA6D /* SetupScreenView.swift */; };
+		AF43E909269F6E8B0043AA6D /* WorkoutScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43E908269F6E8B0043AA6D /* WorkoutScreenView.swift */; };
+		AF43E90B269F8C6D0043AA6D /* RecommendationScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43E90A269F8C6D0043AA6D /* RecommendationScreenView.swift */; };
+		AF43E90E269F9E620043AA6D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF43E910269F9E620043AA6D /* Localizable.strings */; };
+		AF43E912269F9EE60043AA6D /* Pulsating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43E911269F9EE60043AA6D /* Pulsating.swift */; };
+		AF43E914269F9EFA0043AA6D /* getElapsedInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43E913269F9EFA0043AA6D /* getElapsedInterval.swift */; };
+		AF43E916269F9F110043AA6D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43E915269F9F110043AA6D /* ActivityIndicator.swift */; };
+		AF43E918269FA1980043AA6D /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43E917269FA1980043AA6D /* model.swift */; };
+		AF4FFDF826A4A61C0067CDFB /* SwiftUIRouter in Frameworks */ = {isa = PBXBuildFile; productRef = AF4FFDF726A4A61C0067CDFB /* SwiftUIRouter */; };
+		AF4FFDFC26A4CE520067CDFB /* AnimatedRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FFDFB26A4CE520067CDFB /* AnimatedRouting.swift */; };
+		AF5F7D5826A45A3E007047F9 /* RangePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5F7D5726A45A3E007047F9 /* RangePickerView.swift */; };
+		AF8C9C6D26A8C44B003F6723 /* AlertKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF8C9C6C26A8C44B003F6723 /* AlertKit */; };
+		AFBFA06F269F6B29006835C7 /* HeartRange WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AFBFA06E269F6B29006835C7 /* HeartRange WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFBFA074269F6B2B006835C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBFA073269F6B2B006835C7 /* Assets.xcassets */; };
+		AFBFA07B269F6B2B006835C7 /* HeartRange WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AFBFA07A269F6B2B006835C7 /* HeartRange WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFBFA080269F6B2B006835C7 /* HeartRangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBFA07F269F6B2B006835C7 /* HeartRangeApp.swift */; };
+		AFBFA082269F6B2B006835C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBFA081269F6B2B006835C7 /* ContentView.swift */; };
+		AFBFA084269F6B2B006835C7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBFA083269F6B2B006835C7 /* NotificationController.swift */; };
+		AFBFA086269F6B2B006835C7 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBFA085269F6B2B006835C7 /* NotificationView.swift */; };
+		AFBFA088269F6B2B006835C7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBFA087269F6B2B006835C7 /* ComplicationController.swift */; };
+		AFBFA08A269F6B2C006835C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBFA089269F6B2C006835C7 /* Assets.xcassets */; };
+		AFBFA08D269F6B2C006835C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBFA08C269F6B2C006835C7 /* Preview Assets.xcassets */; };
+		AFC5519226AB546C0036ECB3 /* DelayScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5519126AB546C0036ECB3 /* DelayScreenView.swift */; };
+		AFC5519426ABF2620036ECB3 /* LocalizationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5519326ABF2620036ECB3 /* LocalizationUtil.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFBFA070269F6B29006835C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFBFA064269F6B29006835C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFBFA06D269F6B29006835C7;
+			remoteInfo = "HeartRange WatchKit App";
+		};
+		AFBFA07C269F6B2B006835C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFBFA064269F6B29006835C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFBFA079269F6B2B006835C7;
+			remoteInfo = "HeartRange WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFBFA095269F6B2C006835C7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AFBFA07B269F6B2B006835C7 /* HeartRange WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBFA099269F6B2C006835C7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AFBFA06F269F6B29006835C7 /* HeartRange WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AF43E901269F6E210043AA6D /* HeartRange WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeartRange WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		AF43E903269F6E210043AA6D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF43E906269F6E6E0043AA6D /* SetupScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupScreenView.swift; sourceTree = "<group>"; };
+		AF43E908269F6E8B0043AA6D /* WorkoutScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutScreenView.swift; sourceTree = "<group>"; };
+		AF43E90A269F8C6D0043AA6D /* RecommendationScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationScreenView.swift; sourceTree = "<group>"; };
+		AF43E90F269F9E620043AA6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AF43E911269F9EE60043AA6D /* Pulsating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsating.swift; sourceTree = "<group>"; };
+		AF43E913269F9EFA0043AA6D /* getElapsedInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getElapsedInterval.swift; sourceTree = "<group>"; };
+		AF43E915269F9F110043AA6D /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		AF43E917269FA1980043AA6D /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		AF4F433626B0870400AD539A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4FFDFB26A4CE520067CDFB /* AnimatedRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedRouting.swift; sourceTree = "<group>"; };
+		AF5F7D5726A45A3E007047F9 /* RangePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangePickerView.swift; sourceTree = "<group>"; };
+		AFBFA06A269F6B29006835C7 /* Cardio Bounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cardio Bounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBFA06E269F6B29006835C7 /* HeartRange WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HeartRange WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBFA073269F6B2B006835C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFBFA075269F6B2B006835C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFBFA07A269F6B2B006835C7 /* HeartRange WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HeartRange WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBFA07F269F6B2B006835C7 /* HeartRangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRangeApp.swift; sourceTree = "<group>"; };
+		AFBFA081269F6B2B006835C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFBFA083269F6B2B006835C7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AFBFA085269F6B2B006835C7 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		AFBFA087269F6B2B006835C7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AFBFA089269F6B2C006835C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFBFA08C269F6B2C006835C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFBFA08E269F6B2C006835C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFBFA08F269F6B2C006835C7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AFC5519126AB546C0036ECB3 /* DelayScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayScreenView.swift; sourceTree = "<group>"; };
+		AFC5519326ABF2620036ECB3 /* LocalizationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationUtil.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFBFA077269F6B2B006835C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF43E904269F6E210043AA6D /* HealthKit.framework in Frameworks */,
+				AF4FFDF826A4A61C0067CDFB /* SwiftUIRouter in Frameworks */,
+				AF8C9C6D26A8C44B003F6723 /* AlertKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF43E902269F6E210043AA6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF43E903269F6E210043AA6D /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF43E905269F6E430043AA6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFBFA081269F6B2B006835C7 /* ContentView.swift */,
+				AFC5519326ABF2620036ECB3 /* LocalizationUtil.swift */,
+				AF43E90A269F8C6D0043AA6D /* RecommendationScreenView.swift */,
+				AFC5519126AB546C0036ECB3 /* DelayScreenView.swift */,
+				AF43E906269F6E6E0043AA6D /* SetupScreenView.swift */,
+				AF5F7D5726A45A3E007047F9 /* RangePickerView.swift */,
+				AF43E913269F9EFA0043AA6D /* getElapsedInterval.swift */,
+				AF43E915269F9F110043AA6D /* ActivityIndicator.swift */,
+				AF43E911269F9EE60043AA6D /* Pulsating.swift */,
+				AF43E908269F6E8B0043AA6D /* WorkoutScreenView.swift */,
+				AF43E917269FA1980043AA6D /* model.swift */,
+				AF4FFDFB26A4CE520067CDFB /* AnimatedRouting.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFBFA063269F6B29006835C7 = {
+			isa = PBXGroup;
+			children = (
+				AF4F433626B0870400AD539A /* Info.plist */,
+				AFFA5ED026AEA3AE00F97FC8 /* HeartRange */,
+				AF43E910269F9E620043AA6D /* Localizable.strings */,
+				AFBFA072269F6B29006835C7 /* HeartRange WatchKit App */,
+				AFBFA07E269F6B2B006835C7 /* HeartRange WatchKit Extension */,
+				AFBFA06B269F6B29006835C7 /* Products */,
+				AF43E902269F6E210043AA6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFBFA06B269F6B29006835C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFBFA06A269F6B29006835C7 /* Cardio Bounds.app */,
+				AFBFA06E269F6B29006835C7 /* HeartRange WatchKit App.app */,
+				AFBFA07A269F6B2B006835C7 /* HeartRange WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFBFA072269F6B29006835C7 /* HeartRange WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AFBFA073269F6B2B006835C7 /* Assets.xcassets */,
+				AFBFA075269F6B2B006835C7 /* Info.plist */,
+			);
+			path = "HeartRange WatchKit App";
+			sourceTree = "<group>";
+		};
+		AFBFA07E269F6B2B006835C7 /* HeartRange WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AF43E901269F6E210043AA6D /* HeartRange WatchKit Extension.entitlements */,
+				AFBFA07F269F6B2B006835C7 /* HeartRangeApp.swift */,
+				AF43E905269F6E430043AA6D /* View */,
+				AFBFA083269F6B2B006835C7 /* NotificationController.swift */,
+				AFBFA085269F6B2B006835C7 /* NotificationView.swift */,
+				AFBFA087269F6B2B006835C7 /* ComplicationController.swift */,
+				AFBFA089269F6B2C006835C7 /* Assets.xcassets */,
+				AFBFA08E269F6B2C006835C7 /* Info.plist */,
+				AFBFA08F269F6B2C006835C7 /* PushNotificationPayload.apns */,
+				AFBFA08B269F6B2C006835C7 /* Preview Content */,
+			);
+			path = "HeartRange WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AFBFA08B269F6B2C006835C7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AFBFA08C269F6B2C006835C7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFFA5ED026AEA3AE00F97FC8 /* HeartRange */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HeartRange;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFBFA069269F6B29006835C7 /* HeartRange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFBFA09A269F6B2C006835C7 /* Build configuration list for PBXNativeTarget "HeartRange" */;
+			buildPhases = (
+				AFBFA068269F6B29006835C7 /* Resources */,
+				AFBFA099269F6B2C006835C7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFBFA071269F6B29006835C7 /* PBXTargetDependency */,
+			);
+			name = HeartRange;
+			packageProductDependencies = (
+				AF4FFDF626A4A5C80067CDFB /* SwiftUIRouter */,
+				AF4FFE0226A4E9A10067CDFB /* AlertKit */,
+			);
+			productName = HeartRange;
+			productReference = AFBFA06A269F6B29006835C7 /* Cardio Bounds.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		AFBFA06D269F6B29006835C7 /* HeartRange WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFBFA096269F6B2C006835C7 /* Build configuration list for PBXNativeTarget "HeartRange WatchKit App" */;
+			buildPhases = (
+				AFBFA06C269F6B29006835C7 /* Resources */,
+				AFBFA095269F6B2C006835C7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFBFA07D269F6B2B006835C7 /* PBXTargetDependency */,
+			);
+			name = "HeartRange WatchKit App";
+			productName = "HeartRange WatchKit App";
+			productReference = AFBFA06E269F6B29006835C7 /* HeartRange WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AFBFA079269F6B2B006835C7 /* HeartRange WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFBFA092269F6B2C006835C7 /* Build configuration list for PBXNativeTarget "HeartRange WatchKit Extension" */;
+			buildPhases = (
+				AFBFA076269F6B2B006835C7 /* Sources */,
+				AFBFA077269F6B2B006835C7 /* Frameworks */,
+				AFBFA078269F6B2B006835C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HeartRange WatchKit Extension";
+			packageProductDependencies = (
+				AF4FFDF726A4A61C0067CDFB /* SwiftUIRouter */,
+				AF8C9C6C26A8C44B003F6723 /* AlertKit */,
+			);
+			productName = "HeartRange WatchKit Extension";
+			productReference = AFBFA07A269F6B2B006835C7 /* HeartRange WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFBFA064269F6B29006835C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AFBFA069269F6B29006835C7 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					AFBFA06D269F6B29006835C7 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					AFBFA079269F6B2B006835C7 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = AFBFA067269F6B29006835C7 /* Build configuration list for PBXProject "HeartRange" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFBFA063269F6B29006835C7;
+			packageReferences = (
+				AF4FFDF526A4A5C80067CDFB /* XCRemoteSwiftPackageReference "SwiftUIRouter" */,
+				AF4FFE0126A4E9A10067CDFB /* XCRemoteSwiftPackageReference "AlertKit" */,
+			);
+			productRefGroup = AFBFA06B269F6B29006835C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFBFA069269F6B29006835C7 /* HeartRange */,
+				AFBFA06D269F6B29006835C7 /* HeartRange WatchKit App */,
+				AFBFA079269F6B2B006835C7 /* HeartRange WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFBFA068269F6B29006835C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBFA06C269F6B29006835C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBFA074269F6B2B006835C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFBFA078269F6B2B006835C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBFA08D269F6B2C006835C7 /* Preview Assets.xcassets in Resources */,
+				AF43E90E269F9E620043AA6D /* Localizable.strings in Resources */,
+				AFBFA08A269F6B2C006835C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFBFA076269F6B2B006835C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFBFA084269F6B2B006835C7 /* NotificationController.swift in Sources */,
+				AF43E90B269F8C6D0043AA6D /* RecommendationScreenView.swift in Sources */,
+				AF5F7D5826A45A3E007047F9 /* RangePickerView.swift in Sources */,
+				AF43E909269F6E8B0043AA6D /* WorkoutScreenView.swift in Sources */,
+				AFBFA082269F6B2B006835C7 /* ContentView.swift in Sources */,
+				AFBFA088269F6B2B006835C7 /* ComplicationController.swift in Sources */,
+				AF43E916269F9F110043AA6D /* ActivityIndicator.swift in Sources */,
+				AF43E907269F6E6E0043AA6D /* SetupScreenView.swift in Sources */,
+				AFC5519426ABF2620036ECB3 /* LocalizationUtil.swift in Sources */,
+				AF43E918269FA1980043AA6D /* model.swift in Sources */,
+				AFBFA080269F6B2B006835C7 /* HeartRangeApp.swift in Sources */,
+				AFBFA086269F6B2B006835C7 /* NotificationView.swift in Sources */,
+				AF4FFDFC26A4CE520067CDFB /* AnimatedRouting.swift in Sources */,
+				AF43E914269F9EFA0043AA6D /* getElapsedInterval.swift in Sources */,
+				AF43E912269F9EE60043AA6D /* Pulsating.swift in Sources */,
+				AFC5519226AB546C0036ECB3 /* DelayScreenView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFBFA071269F6B29006835C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFBFA06D269F6B29006835C7 /* HeartRange WatchKit App */;
+			targetProxy = AFBFA070269F6B29006835C7 /* PBXContainerItemProxy */;
+		};
+		AFBFA07D269F6B2B006835C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFBFA079269F6B2B006835C7 /* HeartRange WatchKit Extension */;
+			targetProxy = AFBFA07C269F6B2B006835C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF43E910269F9E620043AA6D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF43E90F269F9E620043AA6D /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFBFA090269F6B2C006835C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFBFA091269F6B2C006835C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFBFA093269F6B2C006835C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HeartRange WatchKit Extension/HeartRange WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartRange WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HeartRange WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRange.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		AFBFA094269F6B2C006835C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HeartRange WatchKit Extension/HeartRange WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartRange WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HeartRange WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRange.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		AFBFA097269F6B2C006835C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
+				IBSC_MODULE = HeartRange_WatchKit_Extension;
+				INFOPLIST_FILE = "HeartRange WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRange.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		AFBFA098269F6B2C006835C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
+				IBSC_MODULE = HeartRange_WatchKit_Extension;
+				INFOPLIST_FILE = "HeartRange WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRange.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		AFBFA09B269F6B2C006835C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
+				INFOPLIST_FILE = HeartRange/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRange;
+				PRODUCT_NAME = "Cardio Bounds";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AFBFA09C269F6B2C006835C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 3KZWSZBVJ3;
+				INFOPLIST_FILE = HeartRange/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = phytonmk.HeartRange;
+				PRODUCT_NAME = "Cardio Bounds";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFBFA067269F6B29006835C7 /* Build configuration list for PBXProject "HeartRange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBFA090269F6B2C006835C7 /* Debug */,
+				AFBFA091269F6B2C006835C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFBFA092269F6B2C006835C7 /* Build configuration list for PBXNativeTarget "HeartRange WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBFA093269F6B2C006835C7 /* Debug */,
+				AFBFA094269F6B2C006835C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFBFA096269F6B2C006835C7 /* Build configuration list for PBXNativeTarget "HeartRange WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBFA097269F6B2C006835C7 /* Debug */,
+				AFBFA098269F6B2C006835C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFBFA09A269F6B2C006835C7 /* Build configuration list for PBXNativeTarget "HeartRange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBFA09B269F6B2C006835C7 /* Debug */,
+				AFBFA09C269F6B2C006835C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF4FFDF526A4A5C80067CDFB /* XCRemoteSwiftPackageReference "SwiftUIRouter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/phytonmk/SwiftUIRouter.git";
+			requirement = {
+				kind = revision;
+				revision = c4f0b83bcf8afcf7a825b7129f47bd409f7c1bd0;
+			};
+		};
+		AF4FFE0126A4E9A10067CDFB /* XCRemoteSwiftPackageReference "AlertKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/phytonmk/AlertKit.git";
+			requirement = {
+				kind = revision;
+				revision = aaf34c72051a8645a750f62d99fb08b98c9c8407;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF4FFDF626A4A5C80067CDFB /* SwiftUIRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF4FFDF526A4A5C80067CDFB /* XCRemoteSwiftPackageReference "SwiftUIRouter" */;
+			productName = SwiftUIRouter;
+		};
+		AF4FFDF726A4A61C0067CDFB /* SwiftUIRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF4FFDF526A4A5C80067CDFB /* XCRemoteSwiftPackageReference "SwiftUIRouter" */;
+			productName = SwiftUIRouter;
+		};
+		AF4FFE0226A4E9A10067CDFB /* AlertKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF4FFE0126A4E9A10067CDFB /* XCRemoteSwiftPackageReference "AlertKit" */;
+			productName = AlertKit;
+		};
+		AF8C9C6C26A8C44B003F6723 /* AlertKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF4FFE0126A4E9A10067CDFB /* XCRemoteSwiftPackageReference "AlertKit" */;
+			productName = AlertKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AFBFA064269F6B29006835C7 /* Project object */;
+}

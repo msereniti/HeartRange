@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  HeartRange
+
+  Created by Mikhail Kryuchkov on 7/15/21.
+  
+*/
+
+"timeInterval.moment" = "a moment";
+"timeInterval.about6seconds" = "~ 6 seconds";
+"timeInterval.seconds %lld" = "~ %lld seconds";
+"timeInterval.minute" = "a minute";
+"timeInterval.minutes %lld" = "~ %lld minutes";
+"timeInterval.minutesExact %lld" = "%lld minutes";
+"timeInterval.hoursExact %lld" = "%lld hours";
+"timeInterval.hour" = "an hour";
+"timeInterval.daysExact %lld" = "%lld days";
+"timeInterval.day" = "a day";
+"timeInterval.monthsExact %lld" = "%lld months";
+"timeInterval.month" = "a month";
+"timeInterval.yearsExact %lld" = "%lld years";
+"timeInterval.year" = "a year";
+"timeInterval.got" = "got";
+"timeInterval.ago" = "ago";
+
+"startWorkout.now" = "Start workout";
+"startWorkout.1min" = "Start workout in 1 m.";
+"startWorkout.5min" = "Start workout in 5 m.";
+"startWorkout.15min" = "Start workout in 15 m.";
+"startWorkout.unknown %lld" = "Start workout in %lld s.";
+
+"startDelay.desciption" = "You can delay out of bounds vibrating from workout start";
+"startDelay.1min" = "For 1 minute";
+"startDelay.5min" = "For 5 minutes";
+"startDelay.15min" = "For 15 minutes";
+"startDelay.now" = "Without delay";
+
+"heartRange" = "Prefered heart\nrate bounds";
+"endWorkout" = "End workout";
+"heartRate" = "Heart\nRate";
+"close" = "Close";
+"measuring" = "measuring...";
+"workoutStartsIn.s %lld" = "start in %lld s.";
+"workoutStartsIn.min %lld" = "start in %lld min.";
+"dismissDelay" = "Start workout";
+
+"recommendations.title" = "You can use Karvonen formula to determine the heart rate bounds for optimal cardio training.";
+"recommendations.disclaimer" = "NOTE: it's not a recommendation, only you and your health professional can decide what heart rate bounds to use.";
+"recommendations.age %@" = "Your age\n(picked %@)";
+"recommendations.heartRate %lld" = "Your resting heart\nrate (picked %lld)";
+"recommendations.measureHeartRate" = "Measure current";
+"recommendations.result %lld %lld" = "According to rounded Karvonen Formula, using %lld-%lld bounds is optimal.";
+"recommendations.useResult %lld %lld" = "Use %lld-%lld";
+"recommendations.cancel" = "Cancel, use as was";
+"recommendations.description" = "Maximal allowed heart rate assumed as 220 beates per minute.\nLower bound based on 50% intensity.\nUpper bound based on 80% intensity.";
+
+"error" = "Error";
+"unknownError" = "Unknown error";

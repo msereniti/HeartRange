@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AlertKit",
+        "repositoryURL": "https://github.com/phytonmk/AlertKit.git",
+        "state": {
+          "branch": null,
+          "revision": "aaf34c72051a8645a750f62d99fb08b98c9c8407",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftUIRouter",
+        "repositoryURL": "https://github.com/phytonmk/SwiftUIRouter.git",
+        "state": {
+          "branch": null,
+          "revision": "c4f0b83bcf8afcf7a825b7129f47bd409f7c1bd0",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
